@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+  }
+
+body{
+    /* background-color: blue; */
+    color: green;
+}
+.navbar{
+    /* padding: 30 px; */
+    /* text-align: center; */
+    overflow: hidden;
+    /* color: #333; */
+    background-color: #333;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    /* height: 40px; */
+}
+
+.navbar a{
+    float: right;
+    display: block;
+    color : #5B616A;
+    text-align: centre;
+    padding: 1em;
+    font-size: 1.5em;
+}
+
+.navbar a:hover{
+    color: #ABA9C3;
+    background-color: #CED3DC;
+}
