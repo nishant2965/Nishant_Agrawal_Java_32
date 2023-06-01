@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+
   }
 
 body{
@@ -31,3 +32,12 @@ body{
     color: #ABA9C3;
     background-color: #CED3DC;
 }
+
+.profile_pic img{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+/* img{
+    border-radius: 50%;
+} */

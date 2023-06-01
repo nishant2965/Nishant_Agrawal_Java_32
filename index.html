@@ -27,6 +27,11 @@
         
         <a class = "Home"> Home</a>
       </div>
+
+      <div class = "profile_pic">
+
+        <img src="nishant.jpg" alt="Pic of Nishant" width="250" height="250" >
+      </div>
       <h1>Nishant Agrawal</h1>
     <h2>About</h2>
     <p>I am a Full Stack Developer. I have keen interst in coding. I have interest in playing badminton as well.</p>
@@ -35,7 +40,15 @@
     <h2>Education</h2>
     <p>I am pursuing my Masters from University of Florida <br> I have completed my bachelors from Manipal University Jaipur
     , India. </p>
+    <p id = "nish"></p>
+    <script>
 
+        let myself = {firstName : "Nishant", lastName : "Agrawal", dob : "21/04/2000", age: 23, 
+        hobbies: ['badminton', 'music', 'cricket'], tech: "java", dl: "yes", address: "3800 sw 34th ST", zip: "32608", ssn:"yes"}
+        
+        document.getElementById(nish).innerHTML = "The car type is " + myself.hobbies[myself1.hobbies.length -1]
+
+    </script>
 
     
     
