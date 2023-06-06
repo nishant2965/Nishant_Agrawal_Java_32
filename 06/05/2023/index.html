@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    
+    <h2>Profile</h2>
+
+    <div class = userInputs>
+        <label>First Name : </label>
+        <input type = "text" id = "fName"/>
+    </div>
+
+    <div class = userInputs>
+        <label>Last Name : </label>
+        <input type = "text" id = "lName"/>
+    </div>
+
+    <div class = userInputs>
+        <label>DOB : </label>
+        <input type = "text" id = "dob"/>
+    </div>
+
+    <div class = userInputs>
+        <label>eMail: </label>
+        <input type = "text" id = "email"/>
+    </div>
+
+    <div class = userInputs>
+        <label>Phone Number : </label>
+        <input type = "text" id = "number"/>
+    </div>
+
+    <button onclick="displayInfo()">Submit</button>
+
+    <div id="profile">
+
+        <!-- <br>
+        <h3> Returning profile information</h3> -->
+    </div>
+
+
+    <script>
+        function displayInfo(){
+
+            var fName = document.getElementById("fName").value;
+            var lName = document.getElementById("lName").value;
+            var dob = document.getElementById("dob").value;
+            var email = document.getElementById("email").value;
+            var number = document.getElementById("number").value;
+
+            var info = ("First Name : " + fName + "<br>"+
+                        "Last Name : " + lName + "<br>"+
+                        "DOB : " + dob + "<br>"+
+                        "email : " + email + "<br>"+
+                        "Phone Number : " + number + "<br>");
+            
+            document.getElementById("profile").innerHTML = info;
+
+        }
+
+    </script>
+</body>
+</html>
