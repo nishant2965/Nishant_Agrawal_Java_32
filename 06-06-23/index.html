@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <h2>Profile</h2>
+
+    <div class = "info">
+
+        <div class = userInputs>
+            <label>First Name : </label>
+            <input type = "text" id = "fName"/>
+        </div>
+
+        <div class = userInputs>
+            <label>Last Name : </label>
+            <input type = "text" id = "lName"/>
+        </div>
+
+        <div class = userInputs>
+            <label>DOB : </label>
+            <input type = "date" id = "dob"/>
+        </div>
+
+        <div class = userInputs>
+            <label>eMail: </label>
+            <input type = "text" id = "email"/>
+        </div>
+
+        <div class = userInputs>
+            <label>Phone Number : </label>  
+            <input type = "text" id = "number"/>
+        </div>
+
+        <div class = userInputs>
+            <label>Hobbies : </label>  
+            <!-- <input type = "checkbox" id = "hobbies"/> -->
+
+            <div>
+                <input type="checkbox" id="cycling" name="cycling" value="Cycling">
+                <label for="cycling">Cycling</label>
+                <input type="checkbox" id="writing" name="writing" value="Writing">
+                <label for="writing">Writing</label>
+                <input type="checkbox" id="cooking" name="cooking" value="Cooking">
+                <label for="cooking">Cooking</label>
+                <input type="checkbox" id="painting" name="painting" value="Painting">
+                <label for="painting">Painting</label>
+                <input type="checkbox" id="dancing" name="dancing" value="Dancing">
+                <label for="dancing">Dancing</label>
+                <input type="checkbox" id="badminton" name="badminton" value="Badminton">
+                <label for="badminton">Badminton</label>
+
+            </div>
+        </div>
+
+    </div>
+
+    <button onclick="displayInfo()">Submit</button>
+
+    <div id="profile">
+
+        <!-- <br>
+        <h3> Returning profile information</h3> -->
+    </div>
+
+
+    <script>
+        function displayInfo(){
+
+            var fName = document.getElementById("fName").value;
+            var lName = document.getElementById("lName").value;
+            var dob = document.getElementById("dob").value;
+            var email = document.getElementById("email").value;
+            var number = document.getElementById("number").value;
+
+            const cycling = document.getElementById("cycling");
+            const writing = document.getElementById("writing");
+            const cooking = document.getElementById("cooking");
+            const painting= document.getElementById("painting");
+            const dancing = document.getElementById("dancing");
+            const badminton = document.getElementById("badminton");
+            var hobbies = [];
+
+            if(cycling.checked == true){
+                hobbies.push(document.getElementById("cycling").value);
+            }
+            if(writing.checked == true){
+                hobbies.push(document.getElementById("writing").value);
+            }
+            if(cooking.checked == true){
+                hobbies.push(document.getElementById("cooking").value);
+            }
+            if(painting.checked == true){
+                hobbies.push(document.getElementById("painting").value);
+            }
+            if(dancing.checked == true){
+                hobbies.push(document.getElementById("dancing").value);
+            }
+            if(badminton.checked == true){
+                hobbies.push(document.getElementById("badminton").value);
+            }
+
+            var info = ("First Name : " + fName + "<br>"+
+                        "Last Name : " + lName + "<br>"+
+                        "DOB : " + dob + "<br>"+
+                        "email : " + email + "<br>"+
+                        "Phone Number : " + number + "<br>"+
+                        "Hobbies : " + hobbies);
+            
+            document.getElementById("profile").innerHTML = info;
+
+        }
+
+    </script>
+</body>
+</html>
