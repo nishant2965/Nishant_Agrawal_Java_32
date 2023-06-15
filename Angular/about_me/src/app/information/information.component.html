@@ -1,0 +1,29 @@
+<div class="container">
+    <header>
+      <h1>Information Page</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Profile</a></li>
+          <li><a href="#">Contact</a></li>
+          <li (click)="toggleLoginState()">
+            <a href="#">
+              <ng-container *ngIf="isLoggedIn; else loggedOut">Logout</ng-container>
+              <ng-template #loggedOut>Login</ng-template>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  
+    <main>
+      <h2>About Me</h2>
+      <p>Hi I am Nishant</p>
+    </main>
+  
+    <footer>
+      <form>
+        <input type="text" placeholder="Search..." />
+      </form>
+    </footer>
+  </div>
+  

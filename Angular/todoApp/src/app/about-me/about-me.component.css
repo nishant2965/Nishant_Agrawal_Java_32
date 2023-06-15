@@ -1,0 +1,38 @@
+.about-me-container {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .menu li {
+    display: inline;
+    margin-right: 10px;
+  }
+
+  .menu li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .search-box {
+    margin-top: 20px;
+  }
+
+  .search-box input {
+    width: 200px;
+    padding: 5px;
+  }
